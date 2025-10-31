@@ -1,0 +1,126 @@
+body {
+    background-color: #f4f6f8;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.upload-box {
+    margin-top: 80px;
+    padding: 40px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.image-card {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background: white;
+    padding: 15px;
+}
+.chat-container {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.chat-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.chat-header h2 {
+    margin: 0;
+    color: #2e3a59;
+    font-weight: 600;
+}
+
+.control-panel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+.model-selector,
+#prompt-template {
+    padding: 8px;
+    font-size: 0.95rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    min-width: 200px;
+}
+
+#prompt-template {
+    flex-grow: 1;
+    resize: vertical;
+}
+
+.chat-box {
+    border: 1px solid #d9d9d9;
+    background-color: #fafafa;
+    border-radius: 8px;
+    padding: 16px;
+    height: 400px;
+    overflow-y: auto;
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
+
+.chat-message {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.chat-message.user {
+    color: #0b5ed7;
+    font-weight: 500;
+}
+
+.chat-message.bot {
+    color: #2c3e50;
+}
+
+.chat-input {
+    margin-top: 15px;
+}
+
+#user-input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.chat-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.chat-buttons button {
+    background-color: #0b5ed7;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.chat-buttons button:hover {
+    background-color: #084298;
+}
