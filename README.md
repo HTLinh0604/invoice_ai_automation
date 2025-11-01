@@ -43,7 +43,7 @@ The system is designed across **three interactive tabs**:
   *(Hỗ trợ truy vấn tự nhiên bằng tiếng Việt thông qua mô hình RAG, ví dụ: “Tháng này tôi đã chi bao nhiêu cho việc đi lại?”)*  
 
 <p align="center">
-  <img src="img/tabchatbot.png" width="600" alt="Chatbot Tab">
+  <img src="img/tabc.png" width="600" alt="Chatbot Tab">
   <img src="img/tabchatbot.png" width="600" alt="Chatbot Tab">
 </p>
 
@@ -119,16 +119,19 @@ This system is tailored for Vietnamese invoices — improving accuracy by 20–3
   *(Hạn chế: tốc độ xử lý chậm với ảnh mờ hoặc truy vấn lặp lại nhiều lần.)*  
 
 <p align="center">
-  <img src="img/reslut.png" width="45%" alt="Result Tab"/>
-  <img src="img/rs2.png" width="45%" alt="Result Tab"/>
+  <img src="img/cau1t.png" width="45%" alt="Result Tab"/>
+  <img src="img/cau2.png" width="45%" alt="Result Tab"/>
 </p>
 
 <p align="center">
-  <img src="img/reslut.png" width="45%" alt="Result Tab"/>
-  <img src="img/rs2.png" width="45%" alt="Result Tab"/>
+  <img src="img/cau3.png" width="45%" alt="Result Tab"/>
+  <img src="img/cau4.png" width="45%" alt="Result Tab"/>
 </p>
 
-
+<p align="center">
+  <img src="img/missing.png" width="45%" alt="Result Tab"/>
+  <img src="img/cauloi.png" width="45%" alt="Result Tab"/>
+</p>
 ---
 
 ## 🔧 Installation *(Cài đặt)*  
