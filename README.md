@@ -36,8 +36,8 @@ The system is designed across **three interactive tabs**:
 - **Result Tab** – Displays original vs extracted data, allowing manual correction before storing structured JSON in Milvus vector DB.  
   *(Hiển thị song song ảnh gốc và dữ liệu số hóa, cho phép chỉnh sửa trước khi lưu vào cơ sở dữ liệu vector Milvus.)*
 <p align="center">
-  <img src="img/reslut.png" width="45%" alt="Result Tab"/>
-  <img src="img/rs2.png" width="45%" alt="Result Tab"/>
+  <img src="img/reslut.png" width="40%" alt="Result Tab"/>
+  <img src="img/rs2.png" width="40%" alt="Result Tab"/>
 </p>
 - **Chatbot Tab** – Enables semantic queries like “How much did I spend on travel this month?” using RAG architecture.  
   *(Hỗ trợ truy vấn tự nhiên bằng tiếng Việt thông qua mô hình RAG, ví dụ: “Tháng này tôi đã chi bao nhiêu cho việc đi lại?”)*  
