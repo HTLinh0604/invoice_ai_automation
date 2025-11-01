@@ -17,7 +17,7 @@ This project implements an end-to-end AI system that automates invoice image pro
 *(Dự án này xây dựng hệ thống AI tự động hóa xử lý ảnh hóa đơn, từ trích xuất OCR đến tìm kiếm ngữ nghĩa và chatbot hỗ trợ người dùng.)*
 
 <p align="center">
-  <img src="images/workflow.png" width="600" alt="System Workflow">
+  <img src="img/fullpipeline.png" width="600" alt="System Workflow">
 </p>
 ---
 
@@ -31,18 +31,19 @@ The system is designed across **three interactive tabs**:
 - **Upload Tab** – Performs preprocessing, OCR with Tesseract, and LLM-based field extraction (vendor, date, total, etc.).  
   *(Thực hiện tiền xử lý ảnh, OCR bằng Tesseract, và trích xuất thông tin bằng mô hình ngôn ngữ lớn LLM.)*  
 <p align="center">
-  <img src="images/workflow.png" width="600" alt="System Workflow">
+  <img src="img/upload.png" width="600" alt="Upload Tab">
 </p>
 - **Result Tab** – Displays original vs extracted data, allowing manual correction before storing structured JSON in Milvus vector DB.  
   *(Hiển thị song song ảnh gốc và dữ liệu số hóa, cho phép chỉnh sửa trước khi lưu vào cơ sở dữ liệu vector Milvus.)*
 <p align="center">
-  <img src="images/workflow.png" width="600" alt="System Workflow">
+  <img src="img/reslut.png" width="45%" alt="Result Tab"/>
+  <img src="images/rs2.png" width="45%" alt="Result Tab"/>
 </p>
 - **Chatbot Tab** – Enables semantic queries like “How much did I spend on travel this month?” using RAG architecture.  
   *(Hỗ trợ truy vấn tự nhiên bằng tiếng Việt thông qua mô hình RAG, ví dụ: “Tháng này tôi đã chi bao nhiêu cho việc đi lại?”)*  
 
 <p align="center">
-  <img src="images/workflow.png" width="600" alt="System Workflow">
+  <img src="img/tabchatbot.png" width="600" alt="Chatbot Tab">
 </p>
 
 ---
@@ -70,14 +71,13 @@ The system was trained and tested on **1150+ invoice images** from:
   *(Sử dụng Gemini LLM để trích xuất dữ liệu có cấu trúc và kiểm tra tính nhất quán.)*  
 
 <p align="center">
-  <img src="images/workflow.png" width="600" alt="System Workflow">
+  <img src="img/pipelineocr.png" width="600" alt="OCR Workflow">
 </p>
 
 ### 💡 Innovation *(Tính đổi mới)*  
 This system is tailored for Vietnamese invoices — improving accuracy by 20–30% compared to generic global models.  
 *(Hệ thống được tối ưu cho tiếng Việt, nâng độ chính xác lên 20–30% so với các mô hình OCR quốc tế không chuyên biệt.)*  
 
-🔗 *Node link: [Model Pipeline Diagram](#)*  
 
 ---
 
@@ -94,7 +94,7 @@ This system is tailored for Vietnamese invoices — improving accuracy by 20–3
   *(Gemini LLM chuyển văn bản sạch thành JSON có cấu trúc gồm các trường chính.)*  
 
 <p align="center">
-  <img src="images/workflow.png" width="600" alt="System Workflow">
+  <img src="img/dataclean.png" width="600" alt="Preproces Workflow">
 </p> 
 
 ### 💬 Chatbot Query System *(Chatbot Truy vấn Hóa đơn)*  
@@ -106,7 +106,7 @@ This system is tailored for Vietnamese invoices — improving accuracy by 20–3
   *(Giao diện người dùng phát triển bằng Streamlit, hỗ trợ chat trực tiếp.)*  
 
 <p align="center">
-  <img src="images/workflow.png" width="600" alt="System Workflow">
+  <img src="img/query.png" width="600" alt="System Chatbot">
 </p>
 
 ### 📊 Results and Limitations *(Kết quả và Hạn chế)*  
@@ -117,9 +117,8 @@ This system is tailored for Vietnamese invoices — improving accuracy by 20–3
 - Limitations: Slower response (10–15s) under heavy load, lower accuracy for blurry images.  
   *(Hạn chế: tốc độ xử lý chậm với ảnh mờ hoặc truy vấn lặp lại nhiều lần.)*  
 
-<p align="center">
-  <img src="images/workflow.png" width="600" alt="System Workflow">
-</p>
+
+
 
 ---
 
