@@ -111,7 +111,6 @@ This system is tailored for Vietnamese invoices — improving accuracy by 20–3
   <img src="img/query.png" width="600" alt="System Chatbot">
 </p>
 
----
 
 ### 📊 Results and Limitations *(Kết quả và Hạn chế)*  
 - OCR accuracy: **80–90%** on clear invoices.  
