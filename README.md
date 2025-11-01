@@ -16,8 +16,9 @@
 This project implements an end-to-end AI system that automates invoice image processing — from OCR extraction to semantic search and chatbot interaction.  
 *(Dự án này xây dựng hệ thống AI tự động hóa xử lý ảnh hóa đơn, từ trích xuất OCR đến tìm kiếm ngữ nghĩa và chatbot hỗ trợ người dùng.)*
 
-🔗 *Node link: [Project Overview Diagram](#)*  
-
+<p align="center">
+  <img src="images/workflow.png" width="600" alt="System Workflow">
+</p>
 ---
 
 ## 🎯 Objective and General Solution *(Mục tiêu và Giải pháp Tổng thể)*  
@@ -29,14 +30,20 @@ The system is designed across **three interactive tabs**:
 
 - **Upload Tab** – Performs preprocessing, OCR with Tesseract, and LLM-based field extraction (vendor, date, total, etc.).  
   *(Thực hiện tiền xử lý ảnh, OCR bằng Tesseract, và trích xuất thông tin bằng mô hình ngôn ngữ lớn LLM.)*  
-
+<p align="center">
+  <img src="images/workflow.png" width="600" alt="System Workflow">
+</p>
 - **Result Tab** – Displays original vs extracted data, allowing manual correction before storing structured JSON in Milvus vector DB.  
   *(Hiển thị song song ảnh gốc và dữ liệu số hóa, cho phép chỉnh sửa trước khi lưu vào cơ sở dữ liệu vector Milvus.)*
-
+<p align="center">
+  <img src="images/workflow.png" width="600" alt="System Workflow">
+</p>
 - **Chatbot Tab** – Enables semantic queries like “How much did I spend on travel this month?” using RAG architecture.  
   *(Hỗ trợ truy vấn tự nhiên bằng tiếng Việt thông qua mô hình RAG, ví dụ: “Tháng này tôi đã chi bao nhiêu cho việc đi lại?”)*  
 
-🔗 *Node link: [Interface Preview](#)*  
+<p align="center">
+  <img src="images/workflow.png" width="600" alt="System Workflow">
+</p>
 
 ---
 
@@ -62,6 +69,10 @@ The system was trained and tested on **1150+ invoice images** from:
 - **Prompt Engineering:** Gemini LLM for JSON information extraction and consistency check.  
   *(Sử dụng Gemini LLM để trích xuất dữ liệu có cấu trúc và kiểm tra tính nhất quán.)*  
 
+<p align="center">
+  <img src="images/workflow.png" width="600" alt="System Workflow">
+</p>
+
 ### 💡 Innovation *(Tính đổi mới)*  
 This system is tailored for Vietnamese invoices — improving accuracy by 20–30% compared to generic global models.  
 *(Hệ thống được tối ưu cho tiếng Việt, nâng độ chính xác lên 20–30% so với các mô hình OCR quốc tế không chuyên biệt.)*  
@@ -82,7 +93,9 @@ This system is tailored for Vietnamese invoices — improving accuracy by 20–3
 - **Structured Extraction:** Gemini LLM converts text → JSON (fields, totals, etc.).  
   *(Gemini LLM chuyển văn bản sạch thành JSON có cấu trúc gồm các trường chính.)*  
 
-🔗 *Node link: [OCR Example Result](#)*  
+<p align="center">
+  <img src="images/workflow.png" width="600" alt="System Workflow">
+</p> 
 
 ### 💬 Chatbot Query System *(Chatbot Truy vấn Hóa đơn)*  
 - **RAG Architecture:** Queries converted to vectors, matched via Milvus retriever.  
@@ -92,7 +105,9 @@ This system is tailored for Vietnamese invoices — improving accuracy by 20–3
 - **Frontend:** Built with Streamlit for interactive user chat.  
   *(Giao diện người dùng phát triển bằng Streamlit, hỗ trợ chat trực tiếp.)*  
 
-🔗 *Node link: [Chatbot Demo](#)*  
+<p align="center">
+  <img src="images/workflow.png" width="600" alt="System Workflow">
+</p>
 
 ### 📊 Results and Limitations *(Kết quả và Hạn chế)*  
 - OCR accuracy: **80–90%** on clear invoices.  
@@ -102,7 +117,9 @@ This system is tailored for Vietnamese invoices — improving accuracy by 20–3
 - Limitations: Slower response (10–15s) under heavy load, lower accuracy for blurry images.  
   *(Hạn chế: tốc độ xử lý chậm với ảnh mờ hoặc truy vấn lặp lại nhiều lần.)*  
 
-🔗 *Node link: [Evaluation Table](#)*  
+<p align="center">
+  <img src="images/workflow.png" width="600" alt="System Workflow">
+</p>
 
 ---
 
@@ -128,8 +145,6 @@ The system successfully delivers an AI-driven end-to-end automation pipeline for
   *(Tích hợp truy vấn AI thông minh phục vụ phòng kế toán/kiểm toán.)*  
 - Cloud deployment and secure authentication (JWT/OAuth2).  
   *(Triển khai cloud và bảo mật bằng JWT/OAuth2.)*  
-
-🔗 *Node link: [System Overview Poster](#)*  
 
 ---
 
