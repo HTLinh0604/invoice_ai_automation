@@ -18,7 +18,8 @@ This project implements an end-to-end AI system that automates invoice image pro
 
 <p align="center">
   <img src="img/fullpipeline.png" width="600" alt="System Workflow">
-</p>
+</p> 
+
 ---
 
 ## 🎯 Objective and General Solution *(Mục tiêu và Giải pháp Tổng thể)*  
@@ -110,6 +111,8 @@ This system is tailored for Vietnamese invoices — improving accuracy by 20–3
   <img src="img/query.png" width="600" alt="System Chatbot">
 </p>
 
+---
+
 ### 📊 Results and Limitations *(Kết quả và Hạn chế)*  
 - OCR accuracy: **80–90%** on clear invoices.  
   *(Độ chính xác OCR đạt 80–90% với ảnh hóa đơn rõ nét.)*  
@@ -132,6 +135,7 @@ This system is tailored for Vietnamese invoices — improving accuracy by 20–3
   <img src="img/missing.png" width="45%" alt="Result Tab"/>
   <img src="img/cauloi.png" width="45%" alt="Result Tab"/>
 </p>
+
 ---
 
 ## 🔧 Installation *(Cài đặt)*  
