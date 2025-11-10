@@ -1,4 +1,4 @@
-# 🧾 AI Invoice Recognition and Storage Automation  
+#  AI Invoice Recognition and Storage Automation  
 *(Ứng dụng Trí Tuệ Nhân Tạo trong Nhận Diện và Tự Động Hóa Lưu Trữ Hóa Đơn)*  
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)
@@ -12,7 +12,7 @@
 
 ---
 
-## 📖 Overview *(Tổng quan)*  
+##  Overview *(Tổng quan)*  
 This project implements an end-to-end AI system that automates invoice image processing — from OCR extraction to semantic search and chatbot interaction.  
 *(Dự án này xây dựng hệ thống AI tự động hóa xử lý ảnh hóa đơn, từ trích xuất OCR đến tìm kiếm ngữ nghĩa và chatbot hỗ trợ người dùng.)*
 
@@ -22,7 +22,7 @@ This project implements an end-to-end AI system that automates invoice image pro
 
 ---
 
-## 🎯 Objective and General Solution *(Mục tiêu và Giải pháp Tổng thể)*  
+##  Objective and General Solution *(Mục tiêu và Giải pháp Tổng thể)*  
 The main goal is to transform messy invoice images into a structured, searchable knowledge base — replacing error-prone manual work with an intelligent automated pipeline.  
 *(Mục tiêu là biến ảnh hóa đơn lộn xộn thành cơ sở dữ liệu có tổ chức, thay thế quy trình thủ công dễ sai bằng hệ thống tự động thông minh.)*
 
@@ -52,9 +52,9 @@ The system is designed across **three interactive tabs**:
 
 ---
 
-## 🧩 Theoretical Background & Technologies *(Cơ sở Lý thuyết và Công nghệ)*  
+##  Theoretical Background & Technologies *(Cơ sở Lý thuyết và Công nghệ)*  
 
-### 🗂️ Dataset *(Nguồn dữ liệu)*  
+###  Dataset *(Nguồn dữ liệu)*  
 The system was trained and tested on **1150+ invoice images** from:  
 *(Hệ thống được huấn luyện và kiểm tra trên hơn 1150 ảnh hóa đơn từ:)*  
 - Roboflow Dataset (~1000 images) — mixed formats for OCR and document analysis.  
@@ -62,7 +62,7 @@ The system was trained and tested on **1150+ invoice images** from:
 - Local Vietnamese invoices (~150 images) — Bách Hóa Xanh receipts in VND format.  
   *(Dữ liệu thực tế từ Bách Hóa Xanh với ngôn ngữ và định dạng tiền tệ Việt Nam.)*  
 
-### ⚙️ Algorithms and Methods *(Thuật toán và Phương pháp)*  
+###  Algorithms and Methods *(Thuật toán và Phương pháp)*  
 - **Image Processing:** Gaussian Blur, OTSU Thresholding, Morphological operations.  
   *(Tiền xử lý ảnh bằng các kỹ thuật Gaussian Blur, OTSU Thresholding, và toán tử hình thái.)*  
 - **OCR:** Tesseract OCR for text extraction.  
@@ -78,16 +78,16 @@ The system was trained and tested on **1150+ invoice images** from:
   <img src="img/pipelineocr.png" width="600" alt="OCR Workflow">
 </p>
 
-### 💡 Innovation *(Tính đổi mới)*  
+###  Innovation *(Tính đổi mới)*  
 This system is tailored for Vietnamese invoices — improving accuracy by 20–30% compared to generic global models.  
 *(Hệ thống được tối ưu cho tiếng Việt, nâng độ chính xác lên 20–30% so với các mô hình OCR quốc tế không chuyên biệt.)*  
 
 
 ---
 
-## 🧠 Implementation and Experiment *(Triển khai và Thực nghiệm)*  
+##  Implementation and Experiment *(Triển khai và Thực nghiệm)*  
 
-### 🏗️ OCR & Data Extraction *(Hệ thống OCR và Trích xuất dữ liệu)*  
+###  OCR & Data Extraction *(Hệ thống OCR và Trích xuất dữ liệu)*  
 - **Preprocessing:** Resizing → Grayscale → Blur → Threshold → Morphology.  
   *(Tiền xử lý ảnh qua chuỗi bước làm sạch, làm rõ và nhị phân hóa.)*  
 - **OCR:** `pytesseract` with Vietnamese config (`lang='vie'`).  
@@ -101,7 +101,7 @@ This system is tailored for Vietnamese invoices — improving accuracy by 20–3
   <img src="img/dataclean.png" width="600" alt="Preproces Workflow">
 </p> 
 
-### 💬 Chatbot Query System *(Chatbot Truy vấn Hóa đơn)*  
+###  Chatbot Query System *(Chatbot Truy vấn Hóa đơn)*  
 - **RAG Architecture:** Queries converted to vectors, matched via Milvus retriever.  
   *(Kiến trúc RAG: truy vấn được biểu diễn bằng vector và tìm kiếm ngữ nghĩa trong Milvus.)*  
 - **Agent Logic:** LangChain agent combines history and retrieved data for context-aware answers.  
@@ -114,7 +114,7 @@ This system is tailored for Vietnamese invoices — improving accuracy by 20–3
 </p>
 
 
-### 📊 Results and Limitations *(Kết quả và Hạn chế)*  
+###  Results and Limitations *(Kết quả và Hạn chế)*  
 - OCR accuracy: **80–90%** on clear invoices.  
   *(Độ chính xác OCR đạt 80–90% với ảnh hóa đơn rõ nét.)*  
 - Chatbot: Near-instant responses, capable of semantic queries.  
@@ -139,7 +139,7 @@ This system is tailored for Vietnamese invoices — improving accuracy by 20–3
 
 ---
 
-## 🏁 Conclusion & Future Work *(Kết luận và Hướng phát triển)*  
+##  Conclusion & Future Work *(Kết luận và Hướng phát triển)*  
 The system successfully delivers an AI-driven end-to-end automation pipeline for invoice digitization and semantic search.  
 *(Hệ thống đã hoàn thiện quy trình tự động hóa hóa đơn đầu-cuối, hỗ trợ trích xuất, lưu trữ, và truy vấn ngữ nghĩa hiệu quả.)*
 
@@ -154,7 +154,7 @@ The system successfully delivers an AI-driven end-to-end automation pipeline for
 
 ---
 
-## 👥 Team Information *(Thông tin Nhóm Thực hiện)*  
+##  Team Information *(Thông tin Nhóm Thực hiện)*  
 This project was developed by **Hồ Gia Thành, Huỳnh Thái Linh, and Trương Minh Khoa** — Class **22DKHA1**,  
 under the supervision of **Dr. Hoàng Văn Quý**, Faculty of Information Technology, **HUTECH University**.  
 *(Đồ án được thực hiện bởi nhóm sinh viên Hồ Gia Thành, Huỳnh Thái Linh, Trương Minh Khoa – lớp 22DKHA1, dưới sự hướng dẫn của TS. Hoàng Văn Quý, Khoa CNTT, Đại học Công nghệ TP.HCM.)*
